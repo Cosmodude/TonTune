@@ -10,13 +10,13 @@ export async function run(provider: NetworkProvider) {
         nextItemIndex: 0,
         collectionContent: buildNftCollectionContentCell(
             {
-                collectionContent: '',
+                collectionContent: 'https://raw.githubusercontent.com/Cosmodude/TonTune/main/collectionMetadata.json',
                 commonContent: ''
             }
         ),
         nftItemCode: await compile('NftItem'),
         royaltyParams: {
-            royaltyFactor: 15,
+            royaltyFactor: Math.floor(Math.random() * 100),
             royaltyBase: 100,
             royaltyAddress: provider.sender().address as Address
         }
