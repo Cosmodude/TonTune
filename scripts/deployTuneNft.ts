@@ -21,7 +21,7 @@ export async function run(provider: NetworkProvider) {
             royaltyAddress: provider.sender().address as Address
         }
         
-    }, await compile('NftCollection')));
+    }, await compile('TuneNft')));
 
     await nftCollection.sendDeploy(provider.sender(), toNano('0.05'));
 
