@@ -50,6 +50,7 @@ export class TuneNft implements Contract {
             body: beginCell().endCell(),
         });
     }
+    
     async sendMintNft(provider: ContractProvider, via: Sender,
         opts: {
             value: bigint;
