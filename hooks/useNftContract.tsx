@@ -1,7 +1,7 @@
-import { NftCollection } from '../contracts/nft';
+import { TuneNft } from '../wrappers/TuneNft';
 import { Address, Cell, toNano } from 'ton-core';
 import { TonClient } from 'ton';
-import { buildCollectionContentCell } from '../contracts/collectionContent/offChain';
+import { buildCollectionContentCell } from '../scripts/contentUtils/off-chain';
 import { Tap } from '../types/tap';
 
 const ITEM_CONTRACT_CODE =

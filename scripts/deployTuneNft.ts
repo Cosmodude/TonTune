@@ -1,5 +1,5 @@
 import { Address, beginCell, toNano } from 'ton-core';
-import { buildNftCollectionContentCell } from './contentUtils/off-chain';
+import { buildCollectionContentCell } from './contentUtils/off-chain';
 import { TuneNft } from '../wrappers/TuneNft';
 import { compile, NetworkProvider } from '@ton-community/blueprint';
 
@@ -8,7 +8,7 @@ export async function run(provider: NetworkProvider) {
     const nftCollection = provider.open(TuneNft.createFromConfig({
         ownerAddress: provider.sender().address as Address,
         nextItemIndex: 0,
-        collectionContent: buildNftCollectionContentCell(
+        collectionContent: buildCollectionContentCell(
             {
                 collectionContent: 'https://raw.githubusercontent.com/Cosmodude/TonTune/main/collectionMetadata.json',
                 commonContent: ''
