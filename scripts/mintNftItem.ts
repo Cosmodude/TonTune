@@ -11,7 +11,7 @@ export async function run(provider: NetworkProvider, args: string[]) {
 
         await nftCollection.sendMintNft(provider.sender(), {
             value: toNano('0.05'),
-            amount: toNano('0.05'),
+            amount: toNano('0.025'),
             itemIndex: 0,
             itemOwnerAddress: provider.sender().address as Address,
             itemContent: 'https://raw.githubusercontent.com/Cosmodude/TonTune/main/itemMetadata.json',
