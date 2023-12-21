@@ -1,5 +1,5 @@
 #include "imports/stdlib.fc";
-#include "./imports/op-codes.fc";
+#include "./imports/nft_op-codes.fc";
 #include "./imports/params.fc";
 int equal_slices (slice a, slice b) asm "SDEQ";
 int builder_null?(builder b) asm "ISNULL";
