@@ -1,5 +1,9 @@
 # TonTune
 
+### jetton refernce:
+
+https://github.com/EmelyanenkoK/modern_jetton/blob/master/scripts/minterController.ts
+
 ## Project structure
 
 -   `contracts` - source code of all the smart contracts of the project and their dependencies.
