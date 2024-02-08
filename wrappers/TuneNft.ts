@@ -1,4 +1,4 @@
-import { Address, beginCell, Cell, Contract, contractAddress, ContractProvider, Sender, SendMode } from 'ton-core';
+import { Address, beginCell, Cell, Contract, contractAddress, ContractProvider, Sender, SendMode } from '@ton/core';
 import { encodeOffChainContent, decodeOffChainContent } from '../scripts/contentUtils/off-chain';
 
 export type TuneNftConfig = {

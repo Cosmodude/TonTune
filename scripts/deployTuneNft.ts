@@ -1,7 +1,7 @@
-import { Address, beginCell, toNano } from 'ton-core';
+import { Address, beginCell, toNano } from '@ton/core';
 import { buildCollectionContentCell } from './contentUtils/off-chain';
 import { TuneNft } from '../wrappers/TuneNft';
-import { compile, NetworkProvider } from '@ton-community/blueprint';
+import { compile, NetworkProvider } from '@ton/blueprint';
 
 export async function run(provider: NetworkProvider) {
 

@@ -1,8 +1,8 @@
 import { Blockchain, SandboxContract } from '@ton-community/sandbox';
-import { Cell, toNano, Address } from 'ton-core';
+import { Cell, toNano, Address } from '@ton/core';
 import { TuneNft } from '../wrappers/TuneNft';
-import '@ton-community/test-utils';
-import { compile } from '@ton-community/blueprint';
+import '@ton/test-utils';
+import { compile } from '@ton/blueprint';
 import { buildCollectionContentCell } from '../scripts/contentUtils/off-chain';
 
 describe('TuneNft', () => {
